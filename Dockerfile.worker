@@ -1,0 +1,18 @@
+FROM python:3.11-slim
+
+# Install small dependencies for wheel building
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy requirements to leverage Docker layer caching
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Default workdir mount: project root will be mounted by docker-compose for live edits
+COPY . /app
+
+CMD ["/bin/sh", "-c", "python scripts/worker.py"]

@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+.venv/
+venv/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# pytest cache
+.pytest_cache/
+
+# Editor folders
+.vscode/
+.idea/
+
+# Local caches
+.cache/
+llm_usage.log
+
+# OS files
+Thumbs.db
+.DS_Store
+__pycache__/
+.venv/
+.env
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+.venv/
+dist/
+build/
+
+# Streamlit
+.streamlit/
+
+# Python package artifacts
+*.egg-info/
