@@ -1,4 +1,4 @@
-# Transcript → Ad
+# Transcript → Ad Generation
 
 [![CI](https://github.com/your-org/transcript_To_Ad/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/transcript_To_Ad/actions)
 
